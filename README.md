@@ -15,6 +15,16 @@ Code Review Assistant automates the code review process using advanced AI to ana
 
 Get instant, detailed feedback on your code with actionable improvement suggestions.
 
+## 🎥 See It In Action
+
+<div align="center">
+
+https://github.com/NeetigyaShah/code-review-assistant/assets/working.mp4
+
+*Watch the Code Review Assistant in action - from uploading code to getting AI-powered insights*
+
+</div>
+
 ---
 
 ## ⚡ Quick Start
