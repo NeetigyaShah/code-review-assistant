@@ -20,7 +20,7 @@ Get instant, detailed feedback on your code with actionable improvement suggesti
 <div align="center">
 <img width="1895" height="1078" alt="image" src="https://github.com/user-attachments/assets/e29b5f25-5ed1-4229-b935-e527d07378d0" />
 
-[![Watch the video]](https://raw.githubusercontent.com/NeetigyaShah/code-review-assistant/working.mp4)
+[![Watch the video]](https://github.com/NeetigyaShah/code-review-assistant/raw/refs/heads/master/working.mp4)
 *Watch the Code Review Assistant in action - from uploading code to getting AI-powered insights*
 
 </div>
