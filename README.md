@@ -20,7 +20,7 @@ Get instant, detailed feedback on your code with actionable improvement suggesti
 <div align="center">
 
 https://github.com/NeetigyaShah/code-review-assistant/assets/working.mp4
-[![Watch the video](https://raw.githubusercontent.com/NeetigyaShah/code-review-assistant/thumbnail.jpg)](https://raw.githubusercontent.com/NeetigyaShah/code-review-assistant/working.mp4)
+[![Watch the video]](https://raw.githubusercontent.com/NeetigyaShah/code-review-assistant/working.mp4)
 *Watch the Code Review Assistant in action - from uploading code to getting AI-powered insights*
 
 </div>
