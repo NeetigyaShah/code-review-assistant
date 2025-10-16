@@ -90,37 +90,4 @@ Return JSON with this exact structure:
   return JSON.parse(jsonText.trim());
 }
 
-async function generateTests({ sourceCode, language, filename }) {
-  if (!process.env.GEMINI_API_KEY || process.env.MOCK_AI === 'true') {
-    return `// Mock tests for ${filename}\n// Add real assertions here.\ndescribe('sample', () => { it('works', () => { expect(true).toBe(true); }); });`;
-  }
-  const client = getClient();
-  const model = client.getGenerativeModel({ 
-    model: process.env.GEMINI_MODEL || 'gemini-pro',
-    generationConfig: {
-      temperature: 0.7,
-      topK: 40,
-      topP: 0.95,
-      maxOutputTokens: 4096,
-    }
-  });
-  
-  const prompt = `Generate comprehensive unit tests for the following ${language} code from ${filename}. 
-Output ONLY the test code without explanations or markdown formatting.
-
-${sourceCode}`;
-
-  const result = await model.generateContent(prompt);
-  const response = await result.response;
-  let testCode = response.text();
-  
-  // Remove markdown code blocks if present
-  const codeMatch = testCode.match(/```(?:\w+)?\s*([\s\S]*?)```/);
-  if (codeMatch) {
-    testCode = codeMatch[1];
-  }
-  
-  return testCode.trim();
-}
-
-module.exports = { generateReview, generateTests };
+module.exports = { generateReview };

@@ -16,7 +16,5 @@ export const api = {
   listFiles(): Promise<{ files: any[] }> { return request('/files'); },
   createReview(fileId: string): Promise<{ reviewId: string }> { return request('/reviews', { method: 'POST', body: JSON.stringify({ fileId }) }); },
   listReviews(): Promise<{ reviews: any[] }> { return request('/reviews'); },
-  getReview(id: string): Promise<{ review: any }> { return request(`/reviews/${id}`); },
-  createTests(fileId: string): Promise<{ testId: string; testCode: string }> { return request('/tests', { method: 'POST', body: JSON.stringify({ fileId }) }); },
-  getTests(fileId: string): Promise<{ tests: any[] }> { return request(`/tests?fileId=${fileId}`); }
+  getReview(id: string): Promise<{ review: any }> { return request(`/reviews/${id}`); }
 };

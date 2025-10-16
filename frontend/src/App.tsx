@@ -5,9 +5,8 @@ import { FileList } from './components/FileList';
 import { ReviewActions } from './components/ReviewActions';
 import { ReviewList } from './components/ReviewList';
 import { ReviewDetail } from './components/ReviewDetail';
-import { TestGeneration } from './components/TestGeneration';
 import { ThemeToggle } from './components/ThemeToggle';
-import { Code2, FileCode, TestTube, Activity } from 'lucide-react';
+import { Code2, FileCode, Activity } from 'lucide-react';
 
 const qc = new QueryClient();
 
@@ -60,13 +59,6 @@ function Dashboard() {
             <div className="rounded-lg border border-border bg-card p-4 shadow-sm">
               <h3 className="text-sm font-medium mb-3 text-muted-foreground uppercase tracking-wider">Recent Reviews</h3>
               <ReviewList onSelect={setActiveReview} />
-            </div>
-            <div className="rounded-lg border border-border bg-card p-4 shadow-sm">
-              <div className="flex items-center gap-2 mb-4">
-                <TestTube className="h-5 w-5 text-primary" />
-                <h2 className="text-lg font-semibold">Tests</h2>
-              </div>
-              <TestGeneration fileId={selectedFile} />
             </div>
           </div>
 
